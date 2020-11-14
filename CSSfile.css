@@ -1,0 +1,73 @@
+/*
+* {
+  color: black;
+  background-color: rgb(92, 119, 207 ) transparent;
+
+}
+
+h1{
+  
+}
+*/
+a{
+    color: black;
+    text-align: center; 
+    text-decoration: none;
+}
+
+.my-Knowledge{
+    display: grid;
+    grid-template-columns: 250px 220px 220px 220px 220px  ;
+    grid-template-rows: 200px 50px 200px 200px 200px ;
+    background-color: rgb(88, 81, 81) transparent;
+    justify-content: center;
+    align-content: center;
+
+
+    grid-template-areas:
+    'header header header header header'
+    'menu menu menu menu menu'
+    'left left main main main'
+    'left left main main main'
+    'left left main main main'
+    ;
+    
+}
+
+.header{
+    grid-area: header;
+    background-color: black;
+}
+
+.menu{
+    grid-area: menu;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.main{
+    grid-area: main;
+    background-color: rgb(88, 81, 81) ;
+    padding: 50px;
+    border: 1px solid #ddd;
+    border-radius: 5%;
+}
+.left{
+    grid-area: left;
+    background-color: rgba(192, 186, 186, 0.418) ;
+    border-radius: 5%;
+}
+.picx{
+    grid-area: picx;
+    background-color: white;
+}
+
+    
+img{
+    width:20px;
+    height:20px;
+}
+/*
+div>div {
+    background-color: red;
+}*/
