@@ -31,7 +31,7 @@ a{
 .my-Knowledge{
     display: grid;
     grid-template-columns: 5% 35% 20% 20% 20%  ;
-    grid-template-rows: 130px 50px 200px 200px 200px ;
+    grid-template-rows: 130px 50px auto auto auto auto ;
     background-color: rgb(88, 81, 81) transparent;
     justify-content: center;
     align-content: center;
@@ -43,6 +43,7 @@ a{
     'space left main main main'
     'space left main main main'
     'space left main main main'
+    'contact contact contact contact contact'
     
     ;
     
@@ -298,6 +299,207 @@ main .hex {
     width:100vw;
     box-sizing:border-box;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+ 
+  background-size: cover;
+  padding: 1px;
+  padding-left: 30px;
+  position: relative;
+
+}
+#contact .overlay {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  opacity: .60;
+  background-color:#1B7477;
+  border-radius: 10%;
+  margin: 1%;
+
+}
+#contact .section-intro h1 {
+  color: white;
+}
+#contact .section-intro h3 {
+  color: rgba(242, 242, 242, 0.5);
+}
+#contact .section-intro p.lead {
+  color: rgba(242, 242, 242, 0.4);
+}
+
+.contact-content {
+  max-width: 1024px;
+  margin-top: 3px;
+  color: #FFFFFF;
+  position: relative;
+}
+.contact-content h5 {
+  color: #FFFFFF;
+  margin-bottom: 5.4rem;
+}
+.contact-content h6 {
+  color: #555555;
+  font-size: 1.4rem;
+}
+
+/* contact info */
+.contact-info .cinfo {
+  margin-bottom: 4px;
+}
+
+/* contact form */
+#contact form {
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+#contact form .form-field {
+  position: relative;
+}
+#contact form .form-field:before, #contact form .form-field:after {
+  content: "";
+  display: table;
+}
+#contact form .form-field:after {
+  clear: both;
+}
+#contact form .form-field label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  line-height: 1;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  padding: .6rem 2rem .6rem 2rem;
+  margin: 0;
+  color: #000000;
+  background:#1B7477;
+  border-radius: 3px;
+}
+#contact form .form-field label::after {
+  position: absolute;
+  right: 15px;
+  top: 1px;
+  margin-top: -6px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #1B7477;
+  content: "";
+}
+#contact form ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+#contact form :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  /* Firefox 18- */
+}
+#contact form ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  /* Firefox 19+ */
+}
+#contact form :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+#contact form .placeholder {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+#contact input[type="text"],
+#contact input[type="password"],
+#contact input[type="email"],
+#contact textarea {
+  width: 45%;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 3%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="password"]:focus,
+#contact input[type="email"]:focus {
+  color: #FFFFFF;
+}
+
+#contact textarea {
+  min-height: 20px;
+  padding: 5px;
+}
+#contact textarea:focus {
+  color: #FFFFFF;
+}
+
+#contact button.submitform {
+
+    border-radius:10px;
+    background: white;
+    border:1px solid;
+    padding:13px;
+    width: 40%;
+    top: -10%;
+
+}
+#contact button.submitform:hover, #contact button.submitform:focus {
+    color:#777;
+}
+
+#message-warning, #message-success {
+  display: none;
+  background: #000000;
+  padding: 3rem;
+  margin-bottom: 3.6rem;
+  width: 100%;
+}
+
+#message-warning {
+  color: #D32B2E;
+}
+
+#message-success {
+  color:#1B7477;
+}
+
+#message-warning i,
+#message-success i {
+  margin-right: 10px;
+}
+
+/* form loader */
+#submit-loader {
+  display: none;
+  position: relative;
+  left: 0;
+  top: -5%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4.2rem;
+}
+#submit-loader .text-loader {
+  display: none;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.oldie #submit-loader .s-loader {
+  display: none;
+}
+.oldie #submit-loader .text-loader {
+  display: block;
 }
 
 
